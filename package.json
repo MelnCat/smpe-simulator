@@ -1,10 +1,14 @@
 {
-  "name": "zirqnbot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "js-markov": "^3.0.3",
-    "lodash": "^4.17.20"
-  }
+	"name": "zirqnbot",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^12.3.1",
+		"lodash": "^4.17.20"
+	},
+	"scripts": {
+		"start": "node dist/index",
+		"build": "tsc"
+	}
 }
