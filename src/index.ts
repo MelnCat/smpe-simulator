@@ -20,6 +20,8 @@ const zirqn = loadMarkov("../data/zirqn.json");
 const bow = loadMarkov("../data/bow.json");
 const florida = loadMarkov("../data/florida.json");
 const rceckie = loadMarkov("../data/rceckie.json");
+const rad = loadMarkov("../data/rad.json");
+const zef = loadMarkov("../data/zef.json");
 const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token);
 const createAutomate = (markov: Markov, username: string, avatarURL: string, min = 10000, max = 30000) => createRandomInterval(
 	async () => {
@@ -35,5 +37,7 @@ const createAutomate = (markov: Markov, username: string, avatarURL: string, min
 createAutomate(zirqn, "furqn", "https://cdn.discordapp.com/avatars/437845189227446273/6905a41c1d827dbd3efc4f3ef997a956.png?size=1024");
 createAutomate(bow, "bowknee shape row", "https://cdn.discordapp.com/avatars/156922894415429632/2af3bb778e07624c8070b96a2040572d.png?size=1024");
 createAutomate(florida, "FloridaCan", "https://cdn.discordapp.com/avatars/678405690464665631/2a631f58ac0468d13c11bddc7ce38a18.png?size=1024");
-createAutomate(rceckie, "RCEckie", "https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024", 30000, 120000);
+createAutomate(rad, "Radeline", "https://cdn.discordapp.com/avatars/630047851011112970/7c001b05762d7d171eff31b113977c02.png?size=1024", 2000, 50000);
+createAutomate(zef, "unexpected william ░", "https://cdn.discordapp.com/avatars/413143886702313472/5795319df1a0ff89e1d4d491c9ad2879.webp?size=1024");
+createAutomate(rceckie, "RCEckie", "https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024", 20000, 120000);
 
