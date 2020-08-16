@@ -31,7 +31,6 @@ const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
 const axo = loadMarkov("../data/axo.json");
 const ten = loadMarkov("../data/ten.json");
-const furry = loadMarkov("../data/furry.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
@@ -134,11 +133,4 @@ createAutomate(
 	"https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024",
 	20000,
 	120000
-);
-createAutomate(
-	furry,
-	"Suffy",
-	"https://i.imgur.com/9hpi8yH.png",
-	10000,
-	80000
 );
