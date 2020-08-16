@@ -17,6 +17,11 @@ const auth: {
 		token: string;
 	};
 } = JSON.parse(fs.readFileSync(join(__dirname, "../auth.json"), { encoding: "utf8" }));
+const f: Message[] = JSON.parse(fs.readFileSync(join(__dirname, "../data/zef.json"), { encoding: "utf8" }))
+const kk=f.map(x=>new Date(x.timestamp).getHours()).reduce((l,c)=>{l[c]=l[c]?l[c]+1:1;return l}, {} as { [idnex: number]: number })
+for (let i = 0;i<24;i++)kk[i]?[]:kk[i]=0
+console.log(f.find(x => new Date(x.timestamp).getHours() === 6)?.content)
+
 const zirqn = loadMarkov("../data/zirqn.json");
 const bow = loadMarkov("../data/bow.json");
 const florida = loadMarkov("../data/florida.json");
@@ -26,6 +31,7 @@ const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
 const axo = loadMarkov("../data/axo.json");
 const ten = loadMarkov("../data/ten.json");
+const furry = loadMarkov("../data/furry.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
@@ -63,7 +69,7 @@ const createAutomate = (markov: Markov, username: string, avatarURL: string, min
 	createRandomInterval(
 		async () => {
 			const generated = markov.generate();
-			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x), {
+			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x).slice(0, 1999), {
 				username,
 				avatarURL,
 			});
@@ -128,4 +134,11 @@ createAutomate(
 	"https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024",
 	20000,
 	120000
+);
+createAutomate(
+	furry,
+	"Suffy",
+	"https://i.imgur.com/9hpi8yH.png",
+	10000,
+	80000
 );
