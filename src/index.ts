@@ -63,7 +63,7 @@ const createAutomate = (markov: Markov, username: string, avatarURL: string, min
 	createRandomInterval(
 		async () => {
 			const generated = markov.generate();
-			await webhook.send(generated.replace(/\<\!?\@(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x), {
+			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x), {
 				username,
 				avatarURL,
 			});
