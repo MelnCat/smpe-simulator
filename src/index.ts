@@ -17,6 +17,16 @@ const auth: {
 		token: string;
 	};
 } = JSON.parse(fs.readFileSync(join(__dirname, "../auth.json"), { encoding: "utf8" }));
+const tags = {
+	"624744152550342666": "axo#4475",
+	"156922894415429632": "bowknee shape row#0389",
+	"678405690464665631": "FloridaCan#9013",
+	"437845189227446273": "furqn#0001",
+	"630047851011112970": "Radeline#3362",
+	"467383775165284373": "RCEckie#9304",
+	"410571285148598282": "Ten#8881",
+	"413143886702313472": "unexpected william ░#8124"
+}
 const zirqn = loadMarkov("../data/zirqn.json");
 const bow = loadMarkov("../data/bow.json");
 const florida = loadMarkov("../data/florida.json");
@@ -50,7 +60,7 @@ const createAutomate = (markov: Markov, username: string, avatarURL: string, min
 	createRandomInterval(
 		async () => {
 			const generated = markov.generate();
-			await webhook.send(generated.replace(/\@everyone/g, "＠everyone").replace(/\@here/g, "＠here"), {
+			await webhook.send(generated.replace(/\<\!?\@(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `＠${tags[n]}` : `＠${n}`).replace(/\@everyone/g, "＠everyone").replace(/\@here/g, "＠here"), {
 				username,
 				avatarURL,
 			});
