@@ -48,12 +48,22 @@ if (process.argv[2] === "zirqn") {
 	for (const item of shuffled) console.log(`${item.content}\n-----`);
 	process.exit(0);
 }
+const tags = {
+	"624744152550342666": "axo#4475",
+	"156922894415429632": "bowknee shape row#0389",
+	"678405690464665631": "FloridaCan#9013",
+	"437845189227446273": "furqn#0001",
+	"630047851011112970": "Radeline#3362",
+	"467383775165284373": "RCEckie#9304",
+	"410571285148598282": "Ten#8881",
+	"413143886702313472": "unexpected william ░#8124"
+}
 const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token, { disableMentions: "all" });
 const createAutomate = (markov: Markov, username: string, avatarURL: string, min = 10000, max = 30000) =>
 	createRandomInterval(
 		async () => {
 			const generated = markov.generate();
-			await webhook.send(generated, {
+			await webhook.send(generated.replace(/\<\!?\@(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x), {
 				username,
 				avatarURL,
 			});
