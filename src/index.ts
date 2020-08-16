@@ -32,6 +32,7 @@ const bow = loadMarkov("../data/bow.json");
 const florida = loadMarkov("../data/florida.json");
 const rceckie = loadMarkov("../data/rceckie.json");
 const rad = loadMarkov("../data/rad.json");
+const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
@@ -91,10 +92,25 @@ createAutomate(
 	50000
 );
 createAutomate(
+	dae,
+	"Daemon_Ignis",
+	"https://cdn.discordapp.com/avatars/321349427476299777/84c7f789be81a1e49bb248d295fd787a.png?size=1024",
+	3000,
+	60000
+);
+createAutomate(
 	zef,
 	"unexpected william ░",
 	"https://cdn.discordapp.com/avatars/413143886702313472/5795319df1a0ff89e1d4d491c9ad2879.webp?size=1024"
 );
+createAutomate(
+	rceckie,
+	"RCEckie",
+	"https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024",
+	20000,
+	120000
+);
+
 createAutomate(
 	rceckie,
 	"RCEckie",
