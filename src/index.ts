@@ -17,16 +17,6 @@ const auth: {
 		token: string;
 	};
 } = JSON.parse(fs.readFileSync(join(__dirname, "../auth.json"), { encoding: "utf8" }));
-const tags = {
-	"624744152550342666": "axo#4475",
-	"156922894415429632": "bowknee shape row#0389",
-	"678405690464665631": "FloridaCan#9013",
-	"437845189227446273": "furqn#0001",
-	"630047851011112970": "Radeline#3362",
-	"467383775165284373": "RCEckie#9304",
-	"410571285148598282": "Ten#8881",
-	"413143886702313472": "unexpected william ░#8124"
-}
 const zirqn = loadMarkov("../data/zirqn.json");
 const bow = loadMarkov("../data/bow.json");
 const florida = loadMarkov("../data/florida.json");
@@ -35,6 +25,7 @@ const rad = loadMarkov("../data/rad.json");
 const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
 const axo = loadMarkov("../data/axo.json");
+const ten = loadMarkov("../data/ten.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
@@ -109,6 +100,14 @@ createAutomate(
 	axo,
 	"axo",
 	"https://cdn.discordapp.com/avatars/624744152550342666/2b6467cabfc270febe07ee084b86011d.png?size=1024",
+	20000,
+	220000
+);
+
+createAutomate(
+	ten,
+	"Ten",
+	"https://cdn.discordapp.com/avatars/410571285148598282/0cd64e91d12e649de7b1f7456af46951.png?size=1024",
 	20000,
 	220000
 );
