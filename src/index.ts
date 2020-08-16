@@ -34,6 +34,7 @@ const rceckie = loadMarkov("../data/rceckie.json");
 const rad = loadMarkov("../data/rad.json");
 const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
+const axo = loadMarkov("../data/axo.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
@@ -56,12 +57,12 @@ if (process.argv[2] === "zirqn") {
 	for (const item of shuffled) console.log(`${item.content}\n-----`);
 	process.exit(0);
 }
-const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token);
+const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token, { disableMentions: "all" });
 const createAutomate = (markov: Markov, username: string, avatarURL: string, min = 10000, max = 30000) =>
 	createRandomInterval(
 		async () => {
 			const generated = markov.generate();
-			await webhook.send(generated.replace(/\<\!?\@(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `＠${tags[n]}` : `＠${n}`).replace(/\@everyone/g, "＠everyone").replace(/\@here/g, "＠here"), {
+			await webhook.send(generated, {
 				username,
 				avatarURL,
 			});
@@ -72,7 +73,8 @@ const createAutomate = (markov: Markov, username: string, avatarURL: string, min
 createAutomate(
 	zirqn,
 	"furqn",
-	"https://cdn.discordapp.com/avatars/437845189227446273/6905a41c1d827dbd3efc4f3ef997a956.png?size=1024"
+	"https://cdn.discordapp.com/attachments/735321036471402507/744397698576416848/Untitled1352_20200815202904.png"
+	// "https://cdn.discordapp.com/avatars/437845189227446273/6905a41c1d827dbd3efc4f3ef997a956.png?size=1024"
 );
 createAutomate(
 	bow,
@@ -104,11 +106,11 @@ createAutomate(
 	"https://cdn.discordapp.com/avatars/413143886702313472/5795319df1a0ff89e1d4d491c9ad2879.webp?size=1024"
 );
 createAutomate(
-	rceckie,
-	"RCEckie",
-	"https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024",
+	axo,
+	"axo",
+	"https://cdn.discordapp.com/avatars/624744152550342666/2b6467cabfc270febe07ee084b86011d.png?size=1024",
 	20000,
-	120000
+	220000
 );
 
 createAutomate(
