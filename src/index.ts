@@ -10,7 +10,7 @@ const loadMarkov = (url: string) =>
 		(JSON.parse(fs.readFileSync(join(__dirname, url), { encoding: "utf8" })) as Message[])
 			.map(x => x.content)
 			.filter(Boolean),
-			"word", 2
+			"word", 2, false
 	);
 const auth: {
 	webhook: {
@@ -95,7 +95,7 @@ createAutomate(
 createAutomate(
 	rad,
 	"Radeline",
-	"https://cdn.discordapp.com/avatars/630047851011112970/7c001b05762d7d171eff31b113977c02.png?size=1024",
+	"https://cdn.discordapp.com/avatars/630047851011112970/ea116f67cfc0ac30550f335d8fee8364.png?size=1024",
 	2000,
 	50000
 );

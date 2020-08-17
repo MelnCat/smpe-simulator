@@ -7,7 +7,7 @@ export class Markov {
 	public strings: string[][];
 	private START = String.fromCharCode(0xEDAD);
 	private END = String.fromCharCode(0xEF00);
-	public constructor(strings: string[], private mode: "word" | "char" = "word", private order: number = 2) {
+	public constructor(strings: string[], private mode: "word" | "char" = "word", private order: number = 2, private extended: boolean = false) {
 		this.strings = strings.map(x => [this.START, ...x.toLowerCase().split(mode === "word" ? /\s+/ : ""), this.END]);
 	}
 	public generate(start: string[] = [], maxLength = 220): string {
@@ -16,7 +16,7 @@ export class Markov {
 		while (true) {
 			const lastArr = str.slice(-this.order);
 			const all = this.strings.filter(x => exists(x, lastArr)).map(x => x[indexOf(x, lastArr) + this.order]);
-			const toAdd = _.sample(all)!;
+			const toAdd = _.sample(this.extended ? all.filter(x => x != this.END) : all) ?? this.END;
 			str.push(toAdd);
 			if (toAdd === this.END || str.length >= maxLength) break;
 		}
