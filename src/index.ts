@@ -9,7 +9,8 @@ const loadMarkov = (url: string) =>
 	new Markov(
 		(JSON.parse(fs.readFileSync(join(__dirname, url), { encoding: "utf8" })) as Message[])
 			.map(x => x.content)
-			.filter(Boolean)
+			.filter(Boolean),
+			"word", 2
 	);
 const auth: {
 	webhook: {
@@ -20,7 +21,6 @@ const auth: {
 const f: Message[] = JSON.parse(fs.readFileSync(join(__dirname, "../data/zef.json"), { encoding: "utf8" }))
 const kk=f.map(x=>new Date(x.timestamp).getHours()).reduce((l,c)=>{l[c]=l[c]?l[c]+1:1;return l}, {} as { [idnex: number]: number })
 for (let i = 0;i<24;i++)kk[i]?[]:kk[i]=0
-console.log(f.find(x => new Date(x.timestamp).getHours() === 6)?.content)
 
 const zirqn = loadMarkov("../data/zirqn.json");
 const bow = loadMarkov("../data/bow.json");
@@ -90,7 +90,7 @@ createAutomate(
 createAutomate(
 	florida,
 	"FloridaCan",
-	"https://cdn.discordapp.com/avatars/678405690464665631/2a631f58ac0468d13c11bddc7ce38a18.png?size=1024"
+	"https://cdn.discordapp.com/avatars/678405690464665631/8773de610e82841d3b3304cc86e2e17c.png?size=256"
 );
 createAutomate(
 	rad,
