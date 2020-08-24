@@ -34,6 +34,9 @@ const ten = loadMarkov("../data/ten.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
+} else if (process.argv[2] === "sel") {
+	for (let i = 0; i < 10; i++) console.log(loadMarkov(`../data/${process.argv[3]}.json`).generate());
+	process.exit(0);
 } else if (process.argv[2] === "t") {
 	const data = (JSON.parse(
 		fs.readFileSync(join(__dirname, "../data/zirqn.json"), { encoding: "utf8" })
