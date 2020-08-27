@@ -31,6 +31,7 @@ const dae = loadMarkov("../data/dae.json");
 const zef = loadMarkov("../data/zef.json");
 const axo = loadMarkov("../data/axo.json");
 const ten = loadMarkov("../data/ten.json");
+const fin = loadMarkov("../data/fin.json");
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
@@ -64,7 +65,8 @@ const tags = {
 	"630047851011112970": "Radeline#3362",
 	"467383775165284373": "RCEckie#9304",
 	"410571285148598282": "Ten#8881",
-	"413143886702313472": "unexpected william ░#8124"
+	"413143886702313472": "unexpected william ░#8124",
+	"320591753956687882": "Findex_#5603"
 }
 const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token, { disableMentions: "all" });
 const createAutomate = (markov: Markov, username: string, avatarURL: string, min = 10000, max = 30000) =>
@@ -113,6 +115,11 @@ createAutomate(
 	zef,
 	"unexpected william ░",
 	"https://cdn.discordapp.com/avatars/413143886702313472/5795319df1a0ff89e1d4d491c9ad2879.webp?size=1024"
+);
+createAutomate(
+	fin,
+	"Findex_",
+	"https://cdn.discordapp.com/avatars/320591753956687882/4538b296d6e14e46543bd0bb94a4f50a.png?size=1024"
 );
 createAutomate(
 	axo,
