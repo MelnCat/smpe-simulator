@@ -65,7 +65,7 @@ const createAutomate = (filename: string, username: string, avatarURL: string, m
 			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x).slice(0, 1999), {
 				username,
 				avatarURL,
-				files: (Math.round(Math.random()) ? file[Math.floor(Math.random() * file.length)] : []) as string[] ?? []
+				files: (Math.round(Math.random()) ? [file[Math.floor(Math.random() * file.length)]] : []) as string[]
 			});
 		},
 		min,
