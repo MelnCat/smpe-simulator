@@ -90,24 +90,24 @@ createAutomate(
 createAutomate(
 	bow,
 	"bowknee shape row",
-	"https://cdn.discordapp.com/avatars/156922894415429632/2af3bb778e07624c8070b96a2040572d.png?size=1024"
+	"https://cdn.discordapp.com/avatars/156922894415429632/baf192f377fec106aa19cf856a7ee5f1.png?size=2048"
 );
 createAutomate(
 	florida,
 	"FloridaCan",
-	"https://cdn.discordapp.com/avatars/678405690464665631/8773de610e82841d3b3304cc86e2e17c.png?size=256"
+	"https://cdn.discordapp.com/avatars/678405690464665631/e8961af99ba6fb340a69089fb7c31bcb.png?size=2048"
 );
 createAutomate(
 	rad,
 	"Radeline",
-	"https://cdn.discordapp.com/avatars/630047851011112970/ea116f67cfc0ac30550f335d8fee8364.png?size=1024",
+	"https://cdn.discordapp.com/avatars/630047851011112970/74d044bf2cc38610e241fd8cf187de48.png?size=2048",
 	2000,
 	50000
 );
 createAutomate(
 	dae,
 	"Daemon_Ignis",
-	"https://cdn.discordapp.com/avatars/321349427476299777/84c7f789be81a1e49bb248d295fd787a.png?size=1024",
+	"https://cdn.discordapp.com/avatars/321349427476299777/84c7f789be81a1e49bb248d295fd787a.png?size=2048",
 	3000,
 	60000
 );
@@ -119,7 +119,7 @@ createAutomate(
 createAutomate(
 	fin,
 	"Findex_",
-	"https://cdn.discordapp.com/avatars/320591753956687882/4538b296d6e14e46543bd0bb94a4f50a.png?size=1024"
+	"https://cdn.discordapp.com/avatars/320591753956687882/a_ab412847d943c78188d595c5f50dc04c.gif?size=2048"
 );
 createAutomate(
 	axo,
