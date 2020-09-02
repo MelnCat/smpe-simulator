@@ -52,7 +52,7 @@ const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token, { disable
 const createAutomate = (filename: string, username: string, avatarURL: string, min = 10000, max = 30000) =>
 	{
 		const arr = (JSON.parse(fs.readFileSync(join(__dirname, `../data/${filename}.json`), { encoding: "utf8" })) as Message[]);
-		const atts = arr.map(x => x.attachments);
+		const atts = arr.map(x => x.attachments) as string[][];
 		const markov = new Markov(
 			arr.map(x => x.content)
 				.filter(Boolean),
@@ -65,7 +65,7 @@ const createAutomate = (filename: string, username: string, avatarURL: string, m
 			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x).slice(0, 1999), {
 				username,
 				avatarURL,
-				files: (Math.round(Math.random()) ? [file[Math.floor(Math.random() * file.length)]] : []) as string[]
+				...((Math.round(Math.random() && file[0]) ? { files: file[Math.floor(Math.random() * file.length)] } : {})
 			});
 		},
 		min,
