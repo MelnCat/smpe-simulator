@@ -61,11 +61,14 @@ const createAutomate = (filename: string, username: string, avatarURL: string, m
 		createRandomInterval(
 		async () => {
 			const file = atts[Math.floor(Math.random() * atts.length)];
+			const fli = file[Math.floor(Math.random() * file.length)];
+			if (fli) console.log(fli
+				)
 			const generated = markov.generate();
 			await webhook.send(generated.replace(/\<\@\!?(\d+)\>/g, (x, n: keyof typeof tags) => tags[n] ? `@${tags[n]}` : x).slice(0, 1999), {
 				username,
 				avatarURL,
-				...(file[0] ? { files: [file[Math.floor(Math.random() * file.length)]] } : {})
+				...(fli ? { files: [fli] } : {})
 			});
 		},
 		min,
