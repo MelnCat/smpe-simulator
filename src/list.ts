@@ -22,7 +22,7 @@ export const list = [
 	{
 		name: "rad",
 		username: "Radeline",
-		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/74d044bf2cc38610e241fd8cf187de48.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/f501b9cbcf0e5f829cad56756ee8b9ed.png?size=2048",
 		range: [2000, 50000]
 	},
 	{
