@@ -14,6 +14,11 @@ export const list = [
 		username: "bowknee shape row",
 		pfp: "https://cdn.discordapp.com/avatars/156922894415429632/baf192f377fec106aa19cf856a7ee5f1.png?size=2048"
 	},
+	{ 
+		name: "soccer",
+		username: "Rayyan",
+		pfp: "https://cdn.discordapp.com/avatars/288490834758860801/df6040203259b7640322968131e430d3.png?size=2048"
+	},
 	{
 		name: "rad",
 		username: "Radeline",
