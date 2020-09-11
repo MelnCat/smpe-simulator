@@ -7,7 +7,7 @@ export const list = [
 	{
 		name: "florida",
 		username: "FloridaCan",
-		pfp: "https://cdn.discordapp.com/avatars/678405690464665631/e8961af99ba6fb340a69089fb7c31bcb.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/678405690464665631/d93831797e89854d5654d3fd78ca24f4.png?size=2048"
 	},
 	{ 
 		name: "bow",
@@ -28,13 +28,13 @@ export const list = [
 	{
 		name: "dae",
 		username: "Daemon_Ignis",
-		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/84c7f789be81a1e49bb248d295fd787a.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/85689c2fad9a744e525a847a510c7875.png?size=2048",
 		range: [3000, 60000]
 	},
 	{
 		name: "zef",
 		username: "unexpected william ░",
-		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/5795319df1a0ff89e1d4d491c9ad2879.webp?size=1024"
+		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/e03dd5b51229358d11625e9d79e1f66f.png?size=2048"
 	},
 	{
 		name: "fin",
