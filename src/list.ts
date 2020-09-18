@@ -43,7 +43,7 @@ export const list = [
 	},
 	{
 		name: "axo",
-		pfp: "https://cdn.discordapp.com/avatars/624744152550342666/2b6467cabfc270febe07ee084b86011d.png?size=1024",
+		pfp: "https://cdn.discordapp.com/avatars/624744152550342666/86142c5dfda28bf61feb4051c6413edf.png?size=2048",
 		range: [20000, 220000]
 	},
 	{
