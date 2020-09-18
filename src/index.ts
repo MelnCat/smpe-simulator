@@ -47,7 +47,8 @@ const tags = {
 	"410571285148598282": "Ten#8881",
 	"413143886702313472": "unexpected william ░#8124",
 	"320591753956687882": "Findex_#5603",
-	"288490834758860801": "Rayyan#4384"
+	"288490834758860801": "Rayyan#4384",
+	"247916991044648970": "Cryophoenix#0508"
 }
 const webhook = new WebhookClient(auth.webhook.id, auth.webhook.token, { disableMentions: "all" });
 const createAutomate = (filename: string, username: string, avatarURL: string, min = 10000, max = 30000) =>

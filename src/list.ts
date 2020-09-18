@@ -7,12 +7,12 @@ export const list = [
 	{
 		name: "florida",
 		username: "FloridaCan",
-		pfp: "https://cdn.discordapp.com/avatars/678405690464665631/d93831797e89854d5654d3fd78ca24f4.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/678405690464665631/a0d7cf2d284b96bdf20c69a36e2ea2e4.png?size=2048"
 	},
 	{ 
 		name: "bow",
 		username: "bowknee shape row",
-		pfp: "https://cdn.discordapp.com/avatars/156922894415429632/baf192f377fec106aa19cf856a7ee5f1.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/156922894415429632/3c9d467485b93785063930112d985704.png?size=2048"
 	},
 	{ 
 		name: "soccer",
@@ -39,7 +39,7 @@ export const list = [
 	{
 		name: "fin",
 		username: "Findex_",
-		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/a_ab412847d943c78188d595c5f50dc04c.gif?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/a_cc73eaf52733d90648b2b3aebf65f528.gif?size=2048"
 	},
 	{
 		name: "axo",
