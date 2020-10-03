@@ -55,7 +55,7 @@ export const list = [
 	{
 		name: "rceckie",
 		username: "RCEckie",
-		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/e5384d38bcf73206c132155ba824f500.webp?size=1024",
+		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/28cbf1606bc22ed0faada47b73b5c2ea.png?size=2048",
 		range: [3000, 60000]
 	}
 ] 
