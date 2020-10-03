@@ -11,7 +11,18 @@ const auth: {
 		id: string;
 		token: string;
 	};
-} = JSON.parse(fs.readFileSync(join(__dirname, "../auth.json"), { encoding: "utf8" })); /*
+} = JSON.parse(fs.readFileSync(join(__dirname, "../auth.json"), { encoding: "utf8" })); 
+if (process.argv[2] === "sel") {
+	const arr = (JSON.parse(fs.readFileSync(join(__dirname, `../data/${process.argv[3]}.json`), { encoding: "utf8" })) as Message[]);
+	const markov = new Markov(
+		arr.map(x => x.content)
+			.filter(Boolean),
+			process.argv[4] ? "char" : "word", 2, true
+	);
+	for (let i = 0; i < 10; i++) console.log(markov.generate());
+	process.exit(0);
+}
+/*
 if (process.argv[2] === "zirqn") {
 	for (let i = 0; i < 10; i++) console.log(zirqn.generate());
 	process.exit(0);
