@@ -39,7 +39,8 @@ export const list = [
 	{
 		name: "fin",
 		username: "Brydora",
-		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/def0c527e7d7019e6eb7f6a92673e8ba.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/def0c527e7d7019e6eb7f6a92673e8ba.png?size=2048",
+		range: [20000, 220000]
 	},
 	{
 		name: "axo",
