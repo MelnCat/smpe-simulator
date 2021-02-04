@@ -69,5 +69,10 @@ export const list = [
         name: "blue",
         username: "Bluedys",
         pfp: "https://cdn.discordapp.com/avatars/466750556074016768/26ad64f84b6829023b3528a159660500.png?size=2048"
+    },
+    {
+        name: "speedy",
+        username: "Ἀλέξανδρος",
+        pfp: "https://cdn.discordapp.com/avatars/734858713080529080/1d433851f7c39b164142658fab401db9.png?size=2048"
     }
 ] 
