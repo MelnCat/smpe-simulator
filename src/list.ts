@@ -1,8 +1,8 @@
 export const list = [
 	{
-		name: "zirqn",
-		username: "ziwin",
-		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/715baea71d58241d333a9f37dc1d5916.png?size=2048"
+		name: "zir",
+		username: "zirdys",
+		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/514d5bd33960a4e1257aba5a9d37756d.png?size=1024"
 	},
 	{
 		name: "florida",
@@ -11,39 +11,39 @@ export const list = [
 	},
 	{ 
 		name: "bow",
-		username: "bowknee shape row",
-		pfp: "https://cdn.discordapp.com/avatars/156922894415429632/ad113fedbb563e070223cbb92a78b84b.png?size=2048"
+		username: "Bowdys",
+		pfp: "https://cdn.discordapp.com/avatars/668850312227979264/78d43689a3880bd124855e92cb0d2288.png?size=2048"
 	},
 	{ 
-		name: "soccer",
-		username: "Soccerboss77",
-		pfp: "https://cdn.discordapp.com/avatars/730878272988119141/cf29c3c48f3f2afa0e289dbc1c0b9f22.png?size=2048"
+		name: "ray",
+		username: "Raybot",
+		pfp: "https://cdn.discordapp.com/avatars/730878272988119141/0ae73bc70c42e2b39410613090224a47.png?size=2048"
 	},
 	{
 		name: "rad",
 		username: "Radeline",
-		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/784248a280bfce0bb48c6ebf778af7a7.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/c64179a14381c73c854859ec738cddd9.png?size=2048",
 		range: [2000, 50000]
 	},
 	{
 		name: "dae",
-		username: "Daemon_Ignis",
-		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/ccfac94c90d72466783afee613d2bdaa.png?size=2048",
+		username: "DaeTheRaccoon",
+		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/7c56d3d830118e22d9824d8a9fe8bbca.png?size=2048",
 		range: [3000, 60000]
 	},
 	{
 		name: "zef",
 		username: "unexpected william ░",
-		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/9a4fe24392ab6ee6bf32ddaec5ce095a.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/e2da4e6324977df59f72ddbb6a1fa96b.png?size=2048"
 	},
 	{
 		name: "fin",
-		username: "Findex_",
-		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/1b353c2634ba39b9828a66e23602e212.png?size=2048"
+		username: "Brydora",
+		pfp: "https://cdn.discordapp.com/avatars/320591753956687882/def0c527e7d7019e6eb7f6a92673e8ba.png?size=2048"
 	},
 	{
 		name: "axo",
-		pfp: "https://cdn.discordapp.com/avatars/624744152550342666/b3145d9e7cfa0b6b389ac65f624787ea.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/624744152550342666/a_c35b6becc1e1cb0be0382e3139701380.png?size=2048",
 		range: [20000, 220000]
 	},
 	{
@@ -53,15 +53,20 @@ export const list = [
 		range: [20000, 220000]
 	},
 	{
-		name: "rceckie",
-		username: "RCEckie",
-		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/03a62e023137099a6224940f086cf221.png?size=2048",
+		name: "rce",
+		username: "RCETheRaccoon",
+		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/f70338a7ea77b30977906f45728b7cca.png?size=2048",
 		range: [3000, 60000]
 	},
 	{
 		name: "guh",
 		username: "guh",
-		pfp: "https://cdn.discordapp.com/avatars/201440473359974401/c217a4bc4acc65380d1016e5d676d6b6.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/201440473359974401/e509f8c02b96958bbdeb3db951521fc6.png?size=2048",
 		range: [3000, 60000]
-	}
+	},
+    {
+        name: "blue",
+        username: "Bluedys",
+        pfp: "https://cdn.discordapp.com/avatars/466750556074016768/26ad64f84b6829023b3528a159660500.png?size=2048"
+    }
 ] 
