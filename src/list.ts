@@ -2,7 +2,7 @@ export const list = [
 	{
 		name: "zir",
 		username: "zirdys",
-		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/514d5bd33960a4e1257aba5a9d37756d.png?size=1024"
+		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/07ab6ad180f07cf09fea2acf3791ebb7.png?size=2048"
 	},
 	{
 		name: "florida",
@@ -12,7 +12,7 @@ export const list = [
 	{ 
 		name: "bow",
 		username: "Bowdys",
-		pfp: "https://cdn.discordapp.com/avatars/668850312227979264/78d43689a3880bd124855e92cb0d2288.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/204299157874278400/e5d17b955a9432f1a1cb3fdd70c52df1.png?size=2048"
 	},
 	{ 
 		name: "ray",
@@ -21,20 +21,20 @@ export const list = [
 	},
 	{
 		name: "rad",
-		username: "Radeline",
-		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/c64179a14381c73c854859ec738cddd9.png?size=2048",
+		username: "Raddys",
+		pfp: "https://cdn.discordapp.com/avatars/630047851011112970/62eadce0c239bd0a242749fa76f01e6c.png?size=2048",
 		range: [2000, 50000]
 	},
 	{
 		name: "dae",
-		username: "DaeTheRaccoon",
-		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/7c56d3d830118e22d9824d8a9fe8bbca.png?size=2048",
+		username: "Dae_",
+		pfp: "https://cdn.discordapp.com/avatars/321349427476299777/50a0b527187c0e2ca88e426d1658479b.png?size=2048",
 		range: [3000, 60000]
 	},
 	{
 		name: "zef",
-		username: "unexpected william ░",
-		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/e2da4e6324977df59f72ddbb6a1fa96b.png?size=2048"
+		username: "melncat",
+		pfp: "https://cdn.discordapp.com/avatars/413143886702313472/403d796b01856df029b5942aa71cb0a5.png?size=2048"
 	},
 	{
 		name: "fin",
@@ -55,24 +55,24 @@ export const list = [
 	},
 	{
 		name: "rce",
-		username: "RCETheRaccoon",
-		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/f70338a7ea77b30977906f45728b7cca.png?size=2048",
+		username: "RCEckie",
+		pfp: "https://cdn.discordapp.com/avatars/467383775165284373/11445ba7b6afb5dff8c7b2e5747986bf.png?size=2048",
 		range: [3000, 60000]
 	},
 	{
 		name: "guh",
 		username: "guh",
-		pfp: "https://cdn.discordapp.com/avatars/201440473359974401/ab3bec5d7b25f8bf0c1bbb63128685a2.png?size=2048",
+		pfp: "https://cdn.discordapp.com/avatars/201440473359974401/a_54d8e85ee76dbdc4568cbddcc5781cc3.png?size=2048",
 		range: [3000, 60000]
 	},
     {
         name: "blue",
         username: "Bluedys",
-        pfp: "https://cdn.discordapp.com/avatars/466750556074016768/26ad64f84b6829023b3528a159660500.png?size=2048"
+        pfp: "https://cdn.discordapp.com/avatars/466750556074016768/bcf589d24d129476cfd4831f04a3274b.png?size=2048"
     },
     {
         name: "speedy",
-        username: "Ἀλέξανδρος",
-        pfp: "https://cdn.discordapp.com/avatars/734858713080529080/1d433851f7c39b164142658fab401db9.png?size=2048"
+        username: "Speedy112233",
+        pfp: "https://cdn.discordapp.com/avatars/734858713080529080/2cb21888852cfd073bf1d2cc3745425a.png?size=2048"
     }
 ] 
