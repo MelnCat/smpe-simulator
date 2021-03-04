@@ -17,7 +17,7 @@ if (process.argv[2] === "sel") {
 	const markov = new Markov(
 		arr.map(x => x.content)
 			.filter(Boolean),
-			process.argv[4] ? "char" : "word", process.argv[5] ? +process.argv[5] : 2, true
+			process.argv[4] ? process.argv[4].toLowerCase() as any : "word", process.argv[5] ? +process.argv[5] : 2, true
 	);
 	for (let i = 0; i < 10; i++) console.log(markov.generate());
 	process.exit(0);
