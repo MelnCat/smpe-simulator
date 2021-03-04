@@ -19,7 +19,7 @@ if (process.argv[2] === "sel") {
 			.filter(Boolean),
 			process.argv[4] ? process.argv[4].toLowerCase() as any : "word", process.argv[5] ? +process.argv[5] : 2, true
 	);
-	for (let i = 0; i < 10; i++) console.log(markov.generate());
+	for (let i = 0; i < 10; i++) console.log(markov.generate(process.argv[6] ? [process.argv[6]] : undefined));
 	process.exit(0);
 }
 /*
