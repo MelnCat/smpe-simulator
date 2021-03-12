@@ -2,7 +2,7 @@ export const list = [
 	{
 		name: "zir",
 		username: "zirdys",
-		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/07ab6ad180f07cf09fea2acf3791ebb7.png?size=2048"
+		pfp: "https://cdn.discordapp.com/avatars/437845189227446273/815536c5a77c9b24df463a9f41eb1c52.png?size=2048"
 	},
 	{
 		name: "florida",
