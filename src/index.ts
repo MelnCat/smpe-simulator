@@ -69,7 +69,7 @@ const createAutomate = (filename: string, username: string, avatarURL: string, m
 		const markov = new Markov(
 			arr.map(x => x.content)
 				.filter(Boolean),
-				"word", 2, false
+				"word", 2, true
 		);
 		createRandomInterval(
 		async () => {
